@@ -4,11 +4,14 @@
 :root {
     --bg-primary: #8A1538;
     --bg-secundary: rgb(48, 8, 15);
+    --bg-tertiary: rgb(221, 221, 221);
+    --bg-quaternary: rgba(71, 1, 1, 0.507);
+    --bg-quinary: rgba(172, 1, 44, 0.3);
+    --box-shadow:rgba(0, 0, 0, 0.178);
     --color-basic: #fff;
     --color-secundary: rgb(88, 88, 88);
     --text-primary: 'Lalezar', cursive;
     --text-secundary: 'Lato', sans-serif;
-    ;
 }
 
 * {
@@ -35,33 +38,40 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: rgb(221, 221, 221);
+    background: var(--bg-tertiary);
 }
 
-.navbar{
+.navbar {
     background-image: linear-gradient(200deg, var(--bg-secundary), var(--bg-primary));
-    padding: 25px 0 25px 0;
+    padding: 5px 0 5px 0;
 }
 
-.navbar a {
+.navbar-collapse {
+    flex-grow: 0;
+    padding-right: 10px;
+}
+
+.navbar-collapse a {
     text-transform: uppercase;
     font-family: var(--text-secundary);
     text-decoration: none;
     color: var(--color-basic);
     font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 12px;
 }
 
-.navbar a:hover {
-  border-bottom: 1px solid var(--color-basic);
+.navbar-collapse a:hover {
+    border-bottom: 1px solid var(--color-basic);
 }
 
-.navbar img{
+.navbar img {
     width: 160px;
     padding: 10px;
 }
 
-.navbar-toggler-icon{
-    color: var(--color-basic)!important;
+.navbar-toggler-icon {
+    color: var(--color-basic) !important;
 }
 
 .cup-logo {
@@ -69,7 +79,7 @@ body {
     height: auto;
 }
 
-.anfitreao h1 {
+.space-amph h1 {
     color: var(--color-basic);
     text-transform: uppercase;
     font-family: var(--text-primary);
@@ -77,22 +87,22 @@ body {
     font-size: 60px;
 }
 
-.anfitreao p {
+.space-amph p {
     font-family: var(--text-secundary);
     color: var(--color-basic);
     text-align: justify;
     font-size: 20px;
 }
 
-.anfitreao {
+.space-amph {
     background:
-        linear-gradient(rgba(71, 1, 1, 0.507), rgba(172, 1, 44, 0.3)),
+        linear-gradient(var(--bg-quaternary), var(--bg-quinary)),
         url("../img/catar.jpg");
     background-size: cover;
     height: 100% !important;
 }
 
-.pais_anf {
+.cup-amph {
     width: 100%;
     content: '';
     top: 0;
@@ -102,7 +112,7 @@ body {
     background: linear-gradient(to right, var(--bg-secundary)40%, transparent 90%);
 }
 
-.cup-estadios {
+.cup-stadium {
     width: 100%;
     content: '';
     top: 0;
@@ -112,7 +122,7 @@ body {
     background: linear-gradient(to right, var(--bg-secundary)40%, transparent 90%);
 }
 
-.estadio h1 {
+.stadium-space h1 {
     color: var(--color-basic);
     text-transform: uppercase;
     font-family: var(--text-primary);
@@ -120,31 +130,31 @@ body {
     font-size: 60px;
 }
 
-.estadio p {
+.stadium-space p {
     font-family: var(--text-secundary);
     color: var(--color-basic);
     text-align: justify;
     font-size: 20px;
 }
 
-.estadio small {
+.stadium-space small {
     font-family: var(--text-secundary);
     color: var(--color-basic);
     text-align: justify;
     font-size: 15px;
 }
 
-.estadio {
+.stadium-space {
     background:
-        linear-gradient(rgba(71, 1, 1, 0.507), rgba(172, 1, 44, 0.3)),
-        url("../img/qatar.png");
+    linear-gradient(var(--bg-quaternary), var(--bg-quinary)),
+    url("../img/qatar.png");
     background-size: cover;
     height: 100% !important;
     margin-top: 4em;
 
 }
 
-.quadro h1 {
+.cup-field h1 {
     color: var(--bg-primary);
     text-transform: uppercase;
     font-family: var(--text-primary);
@@ -152,7 +162,7 @@ body {
     font-size: 60px;
 }
 
-.quadro h3 {
+.cup-field h3 {
     color: var(--bg-primary);
     text-transform: uppercase;
     font-family: var(--text-secundary);
@@ -160,7 +170,7 @@ body {
     font-size: 20px;
 }
 
-.quadro p {
+.cup-field p {
     color: var(--color-secundary);
     font-family: var(--text-secundary);
     text-align: justify;
@@ -173,13 +183,13 @@ body {
     border-radius: 10px;
 }
 
-.contagem {
+.score-cup {
     height: 300px;
     text-align: center;
-    background: #fff;
+    background: var(--color-basic);
 }
 
-.contagem h1 {
+.score-cup h1 {
     color: var(--bg-primary);
     text-transform: uppercase;
     font-family: var(--text-primary);
@@ -188,53 +198,34 @@ body {
     padding: 30px 10px 0 10px;
 }
 
-.numero {
-    min-width: 20px;
-    max-width: 100px;
+.date-cup {
     color: var(--bg-primary);
     font-size: 60px;
-    margin: 5px;
     text-align: center;
-    padding: 5px;
     font-family: var(--text-primary);
-    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
 }
 
-.legenda {
-    font-size: 20px;
+.date-cup p{
+    width: 100px;
+    text-align: center;
+}
+
+.label-cup {
+    font-size: 25px;
     text-align: center;
     color: var(--bg-primary);
     font-family: var(--text-secundary);
-    margin-top: 0;
+    margin-top: -3em;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
 }
 
-table {
-    margin: auto;
-}
-
-.footer-cup {
-    background-image: linear-gradient(200deg, var(--bg-secundary), var(--bg-primary));
-    padding: 10px 0 10px 0;
-}
-
-.taça img {
+.label-cup p{
     width: 100px;
-    padding: 10px;
-    float: right;
-}
-
-.logo-cup img {
-    width: 160px;
-    padding: 10px;
-}
-
-.cup-rights p {
-    color: var(--color-basic);
-    font-size: 13px;
-    padding-top: 30px;
-    text-transform: uppercase;
     text-align: center;
-    font-family: var(--text-secundary);
 }
 
 .cup-img {
@@ -268,46 +259,26 @@ table {
     border-bottom-right-radius: 5px;
 }
 
-.quadro p {
+.cup-field p {
     padding: 0 15px 0 0;
 }
 
-.quadro {
-    background: rgb(238, 238, 238);
+.cup-field {
+    background: var(--color-basic);
     border-radius: 5px;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.178);
+    box-shadow: 0 0 1em var(--box-shadow);
     margin: 1em;
 }
 
-.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.quadro:hover .image {
+.cup-field:hover .image {
     opacity: 0.3;
 }
 
-.quadro:hover .middle {
+.cup-field:hover .middle {
     opacity: 1;
 }
 
-.galery {
+.stadium-area {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,14 +286,14 @@ table {
     overflow: hidden;
 }
 
-.galery .card-galery {
+.stadium-area .stadium-img-area {
     flex: 1;
     transition: all 1s ease-in-out;
     height: 75vmin;
     position: relative;
 }
 
-.galery .card__head {
+.stadium-area .stadium-title {
     color: var(--color-basic);
     background-image: linear-gradient(200deg, var(--bg-secundary), var(--bg-primary));
     padding: 0.5em;
@@ -340,23 +311,23 @@ table {
     text-transform: uppercase;
 }
 
-.galery .card-galery:hover {
+.stadium-area .stadium-img-area:hover {
     flex-grow: 10;
 }
 
-.galery .card-galery:hover img {
+.stadium-area .stadium-img-area:hover img {
     filter: grayscale(0);
 }
 
-.galery .card-galery:hover .card__head {
+.stadium-area .stadium-img-area:hover .stadium-title {
     top: calc(100% - 2em);
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    color: var(--color-basic);
+    background: var(--box-shadow);
     font-size: 2em;
     transform: rotate(0deg) skew(-5deg);
 }
 
-.galery .card-galery img {
+.stadium-area .stadium-img-area img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -365,44 +336,105 @@ table {
 }
 
 
-.galery .card-galery:not(:nth-child(5)) {
+.stadium-area .stadium-img-area:not(:nth-child(5)) {
     margin-right: 1em;
 }
 
+.material-symbols-outlined {
+    color: var(--color-basic);
+}
+
+.cup-award img {
+    width: 100px;
+    padding: 10px;
+    float: right;
+}
+
+.logo-cup img {
+    width: 160px;
+    padding: 10px;
+}
+
+.cup-rights p {
+    color: var(--color-basic);
+    font-size: 13px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--text-secundary);
+}
+
+
+.footer-cup {
+    background-image: linear-gradient(200deg, var(--bg-secundary), var(--bg-primary));
+    padding: 10px 0 10px 0;
+}
+
+
 @media (max-width: 991px) {
-    .contagem h1 {
+
+    .navbar {
+        background-image: linear-gradient(200deg, var(--bg-secundary), var(--bg-primary));
+        padding: 10px 0 10px 0;
+    }
+
+    .navbar-collapse a {
+        padding: 20px !important;
+        text-align: center;
+    }
+
+    .navbar-collapse a:hover {
+        border-bottom: none;
+        background: var(--bg-primary);
+    }
+    .score-cup h1 {
         font-size: 30px;
         padding: 15px 10px 0 10px;
     }
 
-    .anfitreao {
+    .space-amph {
         height: auto;
         padding: 10px 0 15px 0;
     }
 
-    .anfitreao h1 {
+    .space-amph h1 {
         font-size: 45px;
         padding: 10px 0 15px 0;
     }
 }
 
 @media (max-width: 420px) {
-    .contagem h1 {
+    
+    .navbar {
+        background-image: linear-gradient(200deg, var(--bg-secundary), var(--bg-primary));
+        padding: 10px 0 10px 0;
+    }
+
+    .navbar-collapse a {
+        padding: 20px !important;
+        text-align: center;
+    }
+
+    .navbar-collapse a:hover {
+        border-bottom: none;
+        background: var(--bg-primary);
+    }
+    .score-cup h1 {
         font-size: 20px;
         padding: 10px 5px 0 5px;
     }
 
-    .anfitreao h1 {
+    .space-amph h1 {
         font-size: 40px;
         padding: 10px 0 15px 0;
     }
 
-    .galery .card__head {
+    .stadium-area .stadium-title {
         padding: 5px;
         font-size: 8px;
     }
 
-    .galery .card-galery:hover .card__head {
+    .stadium-area .stadium-img-area:hover .stadium-title {
         font-size: 10px;
     }
 
@@ -410,8 +442,17 @@ table {
         font-size: 8px;
     }
 
-    .quadro h3 {
+    .cup-field h3 {
         padding-top: 15px;
+    }
+
+    .date-cup {
+        font-size: 40px;
+    }
+
+    .label-cup{
+        margin-top: -4em;
+        font-size: 20px;
     }
 
 

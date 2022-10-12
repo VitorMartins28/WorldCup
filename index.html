@@ -14,25 +14,28 @@
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg">
+  <nav class="navbar sticky-top navbar-expand-lg d-flex justify-content-between">
     <a class="navbar-brand" href="#"><img src="resources/img/logoCup.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="material-symbols-outlined">
+        menu_open
+      </span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="contagem">Contagem</a>
+          <a class="nav-link" href="#contagem">Contagem</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="país">País Anfitreão</a>
+          <a class="nav-link" href="#país">País Anfitreão</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="estádios">Estádios</a>
+          <a class="nav-link" href="#estádios">Estádios</a>
         </li>
       </ul>
     </div>
@@ -48,43 +51,25 @@
     </div>
   </div>
   <div class="container-fluid">
-    <div class="row contagem align-items-center" id="contagem">
+    <div class="row score-cup align-items-center justify-content-end">
       <div class="col-12 col-md-12">
         <h1>Contagem regressiva para o Qatar 2022</h1>
-        <table>
-          <tr>
-            <td>
-              <div class="numero" id="dia"></div>
-            </td>
-            <td>
-              <div class="numero" id="hora"></div>
-            </td>
-            <td>
-              <div class="numero" id="minuto"></div>
-            </td>
-            <td>
-              <div class="numero" id="segundo"></div>
-            </td>
-          </tr>
-          <tr style="height:2px">
-            <td>
-              <p class="legenda">Dias</p>
-            </td>
-            <td>
-              <p class="legenda">Horas</p>
-            </td>
-            <td>
-              <p class="legenda">Min</p>
-            </td>
-            <td>
-              <p class="legenda">Seg</p>
-            </td>
-          </tr>
-        </table>
+      </div>
+      <div class="col-12 col-md-12 date-cup">
+        <p class="" id="dia"></p>
+        <p class="" id="hora"></p>
+        <p class="" id="minuto"></p>
+        <p class="" id="segundo"></p>
+      </div>
+      <div class="col-12 col-md-12 label-cup">
+        <p>Dias</p>
+        <p>Horas</p>
+        <p>Min</p>
+        <p>Seg</p>
       </div>
     </div>
-    <div class="row anfitreao align-items-center">
-      <div class="col-12 col-md-12 pais_anf">
+    <div class="row space-amph align-items-center" id="país">
+      <div class="col-12 col-md-12 cup-amph">
         <h1>País Anfitreão</h1>
         <p>O Catar é um país árabe localizado na Ásia Ocidental. Atualmente, é considerado o país mais rico do mundo,
           tendo à frente da sua economia a exportação de petróleo.</p>
@@ -93,7 +78,7 @@
           território administrado pelo membro da classe dominante, o emir.</p>
       </div>
     </div>
-    <div class="row quadro align-items-center">
+    <div class="row cup-field align-items-center">
       <div class="col-12 col-md-4 cup-img-oriente">
       </div>
       <div class="col-12 col-md-8 cup-text">
@@ -108,7 +93,7 @@
         </p>
       </div>
     </div>
-    <div class="row quadro align-items-center">
+    <div class="row cup-field align-items-center">
       <div class="col-12 col-md-4 cup-img-mascote d-block d-md-none">
       </div>
       <div class="col-12 col-md-8 cup-text">
@@ -124,8 +109,8 @@
       <div class="col-12 col-md-4 cup-img-mascote d-none d-md-block">
       </div>
     </div>
-    <div class="row align-items-center estadio">
-      <div class="col-12 col-md-12 cup-estadios">
+    <div class="row align-items-center stadium-space" id="estádios">
+      <div class="col-12 col-md-12 cup-stadium">
         <h1>Estádios</h1>
         <p>No total, oito estádios no Qatar receberão os 64 jogos da Copa do Mundo 2022. </p>
         <small class="d-none d-md-block">Passe o mouse pelas imagens para visualizar.</small>
@@ -133,43 +118,44 @@
         <hr>
       </div>
     </div>
-    <div class="galery">
-      <div class="card-galery">
+    <div class="stadium-area">
+      <div class="stadium-img-area">
         <img src="resources/img/Estádio Al Bayt.jpg">
-        <div class="card__head">
+        <div class="stadium-title">
           <p>Estádio Al Bayt</p>
         </div>
       </div>
-      <div class="card-galery">
+      <div class="stadium-img-area">
         <img src="resources/img/Estádio Khalifa International.jpg">
-        <div class="card__head">Estádio Khalifa International</div>
+        <div class="stadium-title">
+          Estádio Khalifa International</div>
       </div>
-      <div class="card-galery">
+      <div class="stadium-img-area">
         <img src="resources/img/Estádio Al Thumama.jpg">
-        <div class="card__head">Estádio Al Thumama</div>
+        <div class="stadium-title">Estádio Al Thumama</div>
       </div>
-      <div class="card-galery">
+      <div class="stadium-img-area">
         <img src="resources/img/Estádio Ahmad Bin Ali.jpeg">
-        <div class="card__head">Estádio Ahmad Bin Ali</div>
+        <div class="stadium-title">Estádio Ahmad Bin Ali</div>
       </div>
     </div>
 
-    <div class="galery">
-      <div class="card-galery">
+    <div class="stadium-area">
+      <div class="stadium-img-area">
         <img src="resources/img/Estádio Lusail.jpg">
-        <div class="card__head">Estádio Lusail</div>
+        <div class="stadium-title">Estádio Lusail</div>
       </div>
-      <div class="card-galery">
+      <div class="stadium-img-area">
         <img src="resources/img/Estádio 974 (Ras Abu Aboud).jpeg">
-        <div class="card__head">Estádio 974</div>
+        <div class="stadium-title">Estádio 974</div>
       </div>
-      <div class="card-galery">
+      <div class="stadium-img-area">
         <img src="resources/img/Estádio Education City.jpg">
-        <div class="card__head">Estádio Education City</div>
+        <div class="stadium-title">Estádio Education City</div>
       </div>
-      <div class="card-galery">
+      <div class="stadium-img-area">
         <img src="resources/img/Estádio Al Janoub.jpg">
-        <div class="card__head">Estádio Al Janoub</div>
+        <div class="stadium-title">Estádio Al Janoub</div>
       </div>
     </div>
 
@@ -178,7 +164,7 @@
         <div class="col-6 col-md-6 logo-cup">
           <img src="resources/img/logoCup.png" alt="">
         </div>
-        <div class="col-6 col-md-6 taça">
+        <div class="col-6 col-md-6 cup-award">
           <img src="resources/img/taça.png" alt="">
         </div>
         <div class="col-12 col-md-12 cup-rights">
