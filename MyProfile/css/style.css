@@ -1,0 +1,80 @@
+.imagemAluno{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.conteudo {
+    background: #c5c5c55e !important;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.nome-aluno {
+    color: #b11116;
+}
+
+p{
+    color: rgb(128, 128, 128);
+    line-height:6px;
+}
+
+.title_perfil {
+    background: #b11116;
+    color: white;
+    width: 70%;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 5em;
+    box-shadow: 0 6px 6px rgba(92, 92, 92, 0.4);
+}
+.btn-alterar-img{
+    background: #b11116;
+    color: white;
+}
+
+.btn-alterar{
+    background: #b11116;
+    color: white;
+}
+
+label{
+    color: #b11116;
+}
+
+.btn-save{
+    background: #b11116;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .title_perfil {
+        width: 97%;
+        margin-top: 2em;
+    }
+    .conteudo {
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    .nome-aluno{
+        font-size: 1.25em;
+    }
+    .imagemAluno{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    p{
+        line-height: 1;
+    }
+
+    .btn-alterar-img{
+        font-size: 12px;
+    }
+}

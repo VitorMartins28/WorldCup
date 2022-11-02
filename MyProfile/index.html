@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<link rel="stylesheet" href="css\bootstrap.css">
+<link rel="stylesheet" href="css\style.css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class=" title_perfil">
+                <h3>
+                    Meu Perfil
+                </h3>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-4 text-center">
+                    <img src="img/aluno.jpg" class="imagemAluno" alt="Aluno" srcset="">
+                    <button hidden class="btn btn-alterar-img mt-2" id="alterar-imagem">Alterar imagem</button>
+                </div>
+                <div class="col-7 col-md-8 text-left info-aluno">
+                    <h4 class="nome-aluno">Vitor Luis Martins de Oliveira</h4>
+                    <p>Análise e Desenvolvimento de Sistemas</p>
+                    <p>4 Módulo</p>
+                    <p>Fatec Antonio Seabra</p>
+
+                </div>
+                <div class="col-8 col-md-8 mt-4">
+                    <h4 class="text-left">Dados do Aluno</h4>
+                </div>
+                <div class="col-4 col-md-4 mt-4 text-right">
+                    <button class="btn btn-alterar" id="editar">Editar</button>
+                </div>
+                <div class="col-12 col-md-12">
+                    <hr>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="form-group">
+                        <label class="text-left">
+                            Nome completo
+                        </label>
+                        <input class="form-control" type="text" value="Vitor Luis Martins de Oliveira">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="form-group">
+                        <label class="text-left">
+                            Data de Nascimento
+                        </label>
+                        <input class="form-control" type="text" value="28/05/1999">
+                    </div>          
+                </div>
+                <div class="col-12 col-md-4">
+                    <label class="text-left">
+                        Sexo
+                    </label>
+                    <div class="form-group">
+                        <select class="form-control" id="">
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                            <option value="O">Outro</option>
+                            <option value="N">Não informar</option>
+                        </select>
+                    </div>           
+                </div>
+                <div class="col-12 col-md-12 mt-4">
+                    <h6 class="text-left">Endereço</h6>
+                    <hr>
+                </div>
+                <div class="col-12 col-md-2 mt-2">
+                    <div class="form-group">
+                        <label class="text-left">
+                            CEP
+                        </label>
+                        <input class="form-control" name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value);">
+                    </div>          
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="form-group">
+                        <label class="text-left">
+                            Rua
+                        </label>
+                        <input class="form-control" name="rua" type="text" id="rua" size="60">
+                    </div>          
+                </div>
+                <div class="col-12 col-md-2 mt-2">
+                    <div class="form-group">
+                        <label class="text-left">
+                            Número
+                        </label>
+                        <input class="form-control" type="text" value="1240">
+                    </div>          
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="form-group">
+                        <label class="text-left">
+                            Bairro
+                        </label>
+                        <input class="form-control" name="bairro" type="text" id="bairro" size="40">
+                    </div>          
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                    <div class="form-group">
+                        <label class="text-left">
+                            Cidade
+                        </label>
+                        <input class="form-control" name="cidade" type="text" id="cidade" size="40">
+                    </div>          
+                </div>
+                <div class="col-12 col-md-2 mt-2">
+                    <div class="form-group">
+                        <label class="text-left">
+                            Estado
+                        </label>
+                        <input class="form-control" name="uf" type="text" id="uf" size="2">
+                    </div>          
+                </div>
+                <div class="col-12 col-md-6 mt-2">
+                    <div class="form-group">
+                        <label class="text-left">
+                            Email
+                        </label>
+                        <input class="form-control" name="ibge" type="text" id="ibge" size="8">
+                    </div>          
+                </div>
+                <div class="col-12 col-md-12 mt-2">
+                    <div class="form-group">
+                        <button class="btn btn-save btn-block">Salvar Alterações</button>
+                    </div>          
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/perfil.js"></script>
+<script src="js/cep.js"></script>
+
+
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resources/css/bootstrap.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="icon" type="image/png" href="resources/img/Cup2020.png" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>WORLD CUP</title>
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <a class="navbar-brand" href="#"><img src="resources/img/logoCup.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contagem">Contagem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="país">País Anfitreão</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="estádios">Estádios</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="resources/img/cup.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="resources/img/QXE.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row contagem align-items-center" id="contagem">
+      <div class="col-12 col-md-12">
+        <h1>Contagem regressiva para o Qatar 2022</h1>
+        <table>
+          <tr>
+            <td>
+              <div class="numero" id="dia"></div>
+            </td>
+            <td>
+              <div class="numero" id="hora"></div>
+            </td>
+            <td>
+              <div class="numero" id="minuto"></div>
+            </td>
+            <td>
+              <div class="numero" id="segundo"></div>
+            </td>
+          </tr>
+          <tr style="height:2px">
+            <td>
+              <p class="legenda">Dias</p>
+            </td>
+            <td>
+              <p class="legenda">Horas</p>
+            </td>
+            <td>
+              <p class="legenda">Min</p>
+            </td>
+            <td>
+              <p class="legenda">Seg</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="row anfitreao align-items-center">
+      <div class="col-12 col-md-12 pais_anf">
+        <h1>País Anfitreão</h1>
+        <p>O Catar é um país árabe localizado na Ásia Ocidental. Atualmente, é considerado o país mais rico do mundo,
+          tendo à frente da sua economia a exportação de petróleo.</p>
+        <p>Catar (ou Qatar, na transcrição internacional) é um país do Oriente Médio, pequeno em extensão e grande
+          economicamente. O país árabe, oficialmente chamado de Estado do Catar, corresponde a um emirado, ou seja, é um
+          território administrado pelo membro da classe dominante, o emir.</p>
+      </div>
+    </div>
+    <div class="row quadro align-items-center">
+      <div class="col-12 col-md-4 cup-img-oriente">
+      </div>
+      <div class="col-12 col-md-8 cup-text">
+        <h3>A primeira Copa do Mundo realizada no Oriente Médio</h3>
+        <p>Todas as atenções voltadas para o Qatar. O país está de braços abertos para receber tranquila e
+          pacificamente os torcedores do mundo inteiro, unidos por uma só paixão: o futebol.
+        </p>
+        <p>
+          Pequeno, rico e muito quente, o Qatar tem temperaturas entre os 50ºC no verão, por isso, o mundial
+          precisará acontecer no final do ano, com clima mais ameno durante os 80 jogos que ocorrerão nos 8
+          estádios escolhidos para a competição.
+        </p>
+      </div>
+    </div>
+    <div class="row quadro align-items-center">
+      <div class="col-12 col-md-4 cup-img-mascote d-block d-md-none">
+      </div>
+      <div class="col-12 col-md-8 cup-text">
+        <h3>Conheça La'eeb, o mascote da Copa do Mundo FIFA 2022 </h3>
+        <p>Personagem foi inspirado em lenço típico da região e, de acordo com a organização, nome significa
+          “jogador super-habilidoso”
+        </p>
+        <p>
+          Com a forma inspirada no Keffiyeh, lenço para cabeça característico do Catar, a animação mantém a
+          tradição de incluir elementos regionais dos países-sede nos personagens.
+        </p>
+      </div>
+      <div class="col-12 col-md-4 cup-img-mascote d-none d-md-block">
+      </div>
+    </div>
+    <div class="row align-items-center estadio">
+      <div class="col-12 col-md-12 cup-estadios">
+        <h1>Estádios</h1>
+        <p>No total, oito estádios no Qatar receberão os 64 jogos da Copa do Mundo 2022. </p>
+        <small class="d-none d-md-block">Passe o mouse pelas imagens para visualizar.</small>
+        <small class="d-block d-md-none">Clique nas imagens para visualizar.</small>
+        <hr>
+      </div>
+    </div>
+    <div class="galery">
+      <div class="card-galery">
+        <img src="resources/img/Estádio Al Bayt.jpg">
+        <div class="card__head">
+          <p>Estádio Al Bayt</p>
+        </div>
+      </div>
+      <div class="card-galery">
+        <img src="resources/img/Estádio Khalifa International.jpg">
+        <div class="card__head">Estádio Khalifa International</div>
+      </div>
+      <div class="card-galery">
+        <img src="resources/img/Estádio Al Thumama.jpg">
+        <div class="card__head">Estádio Al Thumama</div>
+      </div>
+      <div class="card-galery">
+        <img src="resources/img/Estádio Ahmad Bin Ali.jpeg">
+        <div class="card__head">Estádio Ahmad Bin Ali</div>
+      </div>
+    </div>
+
+    <div class="galery">
+      <div class="card-galery">
+        <img src="resources/img/Estádio Lusail.jpg">
+        <div class="card__head">Estádio Lusail</div>
+      </div>
+      <div class="card-galery">
+        <img src="resources/img/Estádio 974 (Ras Abu Aboud).jpeg">
+        <div class="card__head">Estádio 974</div>
+      </div>
+      <div class="card-galery">
+        <img src="resources/img/Estádio Education City.jpg">
+        <div class="card__head">Estádio Education City</div>
+      </div>
+      <div class="card-galery">
+        <img src="resources/img/Estádio Al Janoub.jpg">
+        <div class="card__head">Estádio Al Janoub</div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row footer-cup">
+        <div class="col-6 col-md-6 logo-cup">
+          <img src="resources/img/logoCup.png" alt="">
+        </div>
+        <div class="col-6 col-md-6 taça">
+          <img src="resources/img/taça.png" alt="">
+        </div>
+        <div class="col-12 col-md-12 cup-rights">
+          <p>Direitos autorais © 2022 — WorldCup. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+</body>
+<script type="text/javascript" src="resources/js/jquery-3.6.1.js"></script>
+<script type="text/javascript" src="resources/js/contagem.js"></script>
+<script type="text/javascript" src="resources/js/bootstrap.js"></script>
+
+</html>
